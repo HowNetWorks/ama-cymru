@@ -1,5 +1,5 @@
 branch-defaults:
-  eb-test:
+  production:
     environment: ama-cymru
     group_suffix: null
 global:
