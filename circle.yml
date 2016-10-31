@@ -18,5 +18,12 @@ dependencies:
 test:
   override:
     - rustup run stable cargo test
-    - rustup run beta cargo test
-    - rustup run nightly cargo test
+    # - rustup run beta cargo test
+    # - rustup run nightly cargo test
+
+deployment:
+  aws:
+    branch: eb-test
+    commands:
+      - pip -q install awsebcli
+      - eb deploy
